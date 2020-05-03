@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>miracle.microservice</groupId>
+  <artifactId>Transform</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Transform to  Microservice</name>
+  <description>The project is part of Microservice Adaptation products</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	
+  	<dependency>
+	  <groupId>io.thorntail</groupId>
+	  <artifactId>jsonb</artifactId>
+	  <version>2.6.0.Final</version>
+  	</dependency>
+  	
+  	<!-- https://mvnrepository.com/artifact/junit/junit-dep -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit-dep</artifactId>
+	    <version>4.11</version>
+	    <type>pom</type>
+	    <scope>test</scope>
+	</dependency>
+  	
+  </dependencies>
+</project>

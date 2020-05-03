@@ -1,0 +1,12 @@
+This folder has all the generated code files and the required lib files for Monolith to operate in Hybrid Architecture.
+Below are the instructions for deploying the generated files.
+
+1) We recommend you to clone/copy your code into a new folder, so your existing code does not get affected.
+2) We will refer to the (new) Monolith Root Directory as "MonolithV2".
+3) Copy the folder "com" to the source folder of MonolithV2 Project.
+4) Replace the existing DependeeClass.java with the new definition of DependeeClass.java. We have explicitly not created the package folders to save you from accidently replacing the package folder, which will result to loss of all other files in that package.
+5) Copy jar files from extLibs to  the Classpath folder ( libs ) in your New Monolith Project.
+6) Execute the MonolithV2 Project in the same way as you were executing Monolith ( the older version) earlier.
+
+This completes your Deployment of New Monolith code(v2) from Transform.
+

@@ -1,0 +1,16 @@
+This folder has all the generated code files which you can plug into Microprofile simple Demo Applicatoin to realize REST Endpoints exposed for New Monolith Application and realize Hybrid Architecture. A "ThorntailDemo" maven project is already included in this distribution and we recommend to use it for first time.
+
+Below are the instructions for deploying the generated files within your Microprofile Project.
+
+1) We will require your (old) Monolith source code, all libraries and dependencies to be merged / available to new Microservice Code. Hence please copy the files to new project.
+2) DependeeClassBridge.java is the java file which is required within the same package as Dependee class in your Monolith Code. We have explicitly not created the package folders to save you from accidently replacing the package folder, which will result to loss of all other files in that package.
+3) Copy the folder "com" to the source folder of New Microservice Project.
+4) Execute the New Microservice Project and you should see the REST endpoints getting exposed.
+
+Incase you are using ThorntailDemo (  highly recomended ), ensure below steps are perfomed in addition to the above steps.
+5) Copy Monolith Source Code, Dependency libraries & properties file etc to the classpath/source folder of ThorntailDemo project.
+6) From a console prompt at source folder, execute "thorntail:run" mvn task ( command "mvn thorntail:run" ) 
+7) You will notice that this self contained application has exposed the rest end points on "localhost:8080", else there is an error.
+8) You can also execute the test cases provided in Monolith Application to test the Transformed Hybrid Application.
+This completes your Deployment of Microservice Application generated using Transform.
+
